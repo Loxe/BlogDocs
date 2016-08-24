@@ -1,0 +1,18 @@
+﻿language: node_js
+node_js: stable
+
+before_install:
+  - echo $SSH_KEY | base64 --decode > ~/.ssh/id_rsa
+  - chmod 0600 ~/.ssh/id_rsa
+
+
+install:
+- npm install hexo-cli -g
+- npm install
+- npm install hexo-generator-feed --save
+- npm install hexo-deployer-git --save
+
+script:
+- hexo clean
+- hexo g
+- hexo deploy
