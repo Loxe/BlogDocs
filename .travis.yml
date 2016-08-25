@@ -1,18 +1,24 @@
-﻿language: node_js
+language: node_js
 node_js: stable
-# test
+
+#
 before_install:
   - echo $SSH_KEY | base64 --decode > ~/.ssh/id_rsa
-  - chmod 0600 ~/.ssh/id_rsa
-
+  - chmod 600 ~/.ssh/id_rsa
+  - git config --global user.name "小饼"
+  - git config --global user.email i@iloxe.com
 
 install:
 - npm install hexo-cli -g
 - npm install
-- npm install hexo-generator-feed --save
 - npm install hexo-deployer-git --save
 
+before_script:
+  - hexo clean
+
+# command to run tests
 script:
-- hexo clean
-- hexo g
-- hexo deploy
+  - hexo generate
+
+after_success:
+  - hexo deploy
