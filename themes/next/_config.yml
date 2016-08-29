@@ -308,7 +308,7 @@ facebook_comments_plugin:
 leancloud_visitors:
   enable: true
   app_id: kIIO80X8ngRciqBlih78FI6g-gzGzoHsz #<app_id>
-  app_key: kIIO80X8ngRciqBlih78FI6g-gzGzoHsz #<app_key>
+  app_key: 7Hnsei817eL3UF29vPDOSknK #<app_key>
 
 # Show PV/UV of the website/page with busuanzi.
 # Get more information on http://ibruce.info/2015/04/04/busuanzi/
