@@ -12,6 +12,8 @@ date: 2016-08-31 17:13:00
 
 这里的方法我已经测试过了，请一定要按照我的步骤来做~ 文件我也会提供的
 
+<!--more-->
+
 # RetroArch
 * 资源 http://buildbot.libretro.com/
 * GitHub https://github.com/libretro/RetroArch
